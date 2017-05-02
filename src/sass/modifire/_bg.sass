@@ -1,0 +1,49 @@
+// bg
+.bgi
+    //images
+    &_item
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: cover
+    &_inter
+        width: 100%
+        height: auto
+        position: relative
+        &--blue
+            overflow: hidden
+            &:after
+                content: ""
+                width: 100%
+                height: 120vh
+                background-color: rgba($blue, .8)
+                position: absolute
+                top: 0
+    &_service
+        width: 100%
+        height: 300px
+        &--min
+            width: 100%
+            height: 100px
+        &--max
+            width: 100%
+            height: 200px
+    &_about
+        width: 100%
+        height: 300px
+
+// background colors
+.bgc
+    &--white
+        background-color: $white
+    &--gainsboro
+        background-color: $gainsboro
+    &--blue
+        background-color: $blue
+    &_rgba
+        &--blue
+            background-color: rgba($blue, .8)
+// Gradien bg
+
+.bg
+    &--gradient
+        //+linear-gradient($white, rgba($silver, 0.25))

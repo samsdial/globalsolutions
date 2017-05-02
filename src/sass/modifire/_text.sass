@@ -1,0 +1,40 @@
+// text.sass
+.title,
+.subtitle,
+.paragraf
+    display: block
+.subtitle
+    &_into
+        &:before
+            content: ""
+            width: 50px
+            height: 2px
+            display: block
+            background-color: $blue
+            margin-bottom: 12px
+.title
+    span
+        display: inline-block
+        margin-right: 10px
+    +heading
+        display: inline-block
+
+//.tag_data
+.txt
+    &_italic
+        font-style: italic
+    &_center
+        text-align: center
+    &_upper
+        text-transform: uppercase
+    &_capital
+        text-transform: capitalize
+    &_right
+        text-align: right
+    &_size
+        &--em
+            &3
+                font-size: 3rem
+            &8
+                font-size: 8rem
+            // number

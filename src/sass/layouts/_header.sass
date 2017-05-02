@@ -1,0 +1,133 @@
+// header
+.header
+    &_wrapper
+        width: 100%
+        z-index: 1000
+        header
+            position: relative
+            margin-top: 35px
+            .container
+                padding: 12px 12px 0px 12px
+
+.column
+    &_brand,
+    &_nav
+        display: inline-block
+        vertical-align: bottom
+        padding: 12px 5px 0px
+        text-align: right
+    &_brand
+        width: 20%
+        padding-bottom: 12px
+    &_nav
+        width: 75%
+nav
+    .nav
+        &--site
+            position: fixed
+            top: -22px
+            left: 0
+            width: 100%
+            height: 150vh
+            padding-top: 75px
+            padding-left: 0px
+            padding-right: 0px
+            padding-bottom: 50px
+            text-align: center
+            z-index: 100
+            background-color: $white
+            +transform(translateX(-100%))
+            +transition(all 0.3s ease-in-out)
+            +MQ(M)
+                position: static
+                padding: 0
+                margin: 0
+                top: 0
+                width: auto
+                height: auto
+                display: inline
+            li
+                position: relative
+                list-style: none
+                width: 100%
+                text-align: center
+                margin: 0px
+                padding: 0px
+                +transition(all .7s ease-in-out)
+                +MQ(M)
+                    display: inline-block
+                    vertical-align: middle
+                    position: relative
+                    z-index: 150px
+                    width: auto
+                a
+                    margin: 0px
+                    color: $black
+                    text-transform: uppercase
+                    display: block
+                    cursor: pointer
+                    padding: 15px
+                    font-size: 13px
+                    font-weight: 500
+                    position: relative
+                    +press
+                        color: $blue
+                        &:after
+                            background-color: $blue
+                            width: 100%
+                    &:after
+                        content: ""
+                        width: 0%
+                        height: 5px
+                        background-color: transparent
+                        display: block
+                        position: absolute
+                        bottom: 0
+                        left: 0
+                        +transition(all .7s ease-in-out)
+.nav_trigger
+    display: inline-block
+    padding-bottom: 10px
+    overflow: hidden
+    white-space: nowrap
+    color: transparent
+    z-index: 151
+    position: absolute
+    top: 35%
+    right: 0px
+    +MQ(M)
+        display: none
+    span
+        position: absolute
+        height: 2px
+        width: 20px
+        top: 10px
+        left: 0
+        margin-left: 0
+        background-color: $blue
+        +transition(all 0.3s ease-in-out)
+        &:before,
+        &:after
+            content: ''
+            position: absolute
+            width: 100%
+            height: 100%
+            backface-visibility: hidden
+            will-change: transform
+            background-color: $blue
+            +transform(translateZ(0))
+            +transition(transform 0.3s 0.3s)
+        &:before
+            +transform(translateY(-6px))
+        &:after
+            +transform(translateY(6px))
+.nav-is-visible
+    .nav--site
+        +transform(translateX(0))
+    .nav_trigger
+        span
+            background-color: rgba($white, 0)
+            &:before
+                +transform(translateY(0) rotate(-45deg))
+            &:after
+                +transform(translateY(0) rotate(45deg))

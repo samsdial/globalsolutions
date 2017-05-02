@@ -1,0 +1,207 @@
+extends ./base/layout.pug
+
+block content
+    main.full
+        .slider
+            .slick_slide--img(style="background-image: url(images/banner/01.jpg)")
+                .info
+                    .title.cl--white
+                        h2 lorem 1
+                    .subtitle.cl--white
+                        p lorem 1
+            .slick_slide--img(style="background-image: url(images/banner/02.jpg)")
+                .info
+                    .title.cl--white
+                        h2 lorem 2
+                    .subtitle.cl--white
+                        p lorem 2
+    main.full.pd_top--x100.pd_bottom--x100
+        .container
+            .row
+                .column.column-middle
+                    .subtitle.subtitle_into.txt_upper.mg_bottom--x50.cl--silver
+                        h4 Por que L&S Global Solutions.
+                    .title.txt_capital.pd_right--x10.cl--blue.mg_bottom--x10
+                        h2 Somos profesionales preparados para trabajar para que su negocio crezca HOy.
+                    .paragraf.cl--gray.pd_right--x10.mg_bottom--x50
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                .column.column-middle
+                    .bgi_item.bgi_about(style="background-image: url(images/banner/01.jpg)")
+    main.full
+        .bgi_inter.bgi_inter--blue.bgi_item.pd_top--x100.pd_bottom--x10(style="background-image: url(images/banner/01.jpg)")
+            .container.zindx_1
+                .row
+                    .column.column-min
+                        .title.title_icon.cl--white.mg_bottom--x20
+                            span.icon.icon_size--em2.icon-refresh
+                            h3 Mobiliario
+                        .paragraf.cl--white.mg_bottom--x50
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    .column.column-min
+                        .title.title_icon.cl--white.mg_bottom--x20
+                            span.icon.icon_size--em2.icon-refresh
+                            h3 Seguridad Industrial
+                        .paragraf.cl--white.mg_bottom--x50
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    .column.column-min
+                        .title.title_icon.cl--white.mg_bottom--x20
+                            span.icon.icon_size--em2.icon-refresh
+                            h3 Consulta Empresarial
+                        .paragraf.cl--white.mg_bottom--x50
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    main.full.hidden
+        .container
+            .row
+                .column
+                    .title
+                        h3 Productos
+            .row
+                .column
+                    ul.list--inline.list_products
+                        li
+                            .bgi_item.bgi_service--max(style="background-image: url(images/banner/01.jpg)")
+                        li
+                            .bgi_item.bgi_service--min(style="background-image: url(images/banner/01.jpg)")
+                        li
+                            .bgi_item.bgi_service--min(style="background-image: url(images/banner/01.jpg)")
+                        li
+                            .bgi_item.bgi_service--min(style="background-image: url(images/banner/01.jpg)")
+            .row
+                .column.column-min
+                    .bgi_item.bgi_service--min(style="background-image: url(images/banner/01.jpg)")
+                .column.column-min
+                    .bgi_item.bgi_service--min(style="background-image: url(images/banner/01.jpg)")
+    main.full.bgc--gainsboro
+        .container
+            .services
+                .list-services
+                    .box_icon.icon_size--x20.txt_center.mg_bottom--x10
+                        span.cl--blue.bdr_radius--full.bdr_blue--x5.icon.icon-refresh
+                    .subtitle.cl--blue.txt_center
+                        h2 Lo mejor en
+                    .title.txt_size--em3.txt_center.cl--gray.mg_bottom--x10
+                        h2 Mobiliario
+                .list-services
+                    .box_icon.icon_size--x20.txt_center.mg_bottom--x10
+                        span.cl--blue.bdr_radius--full.bdr_blue--x5.icon.icon-refresh
+                    .subtitle.cl--blue.txt_center
+                        h2 Lo mejor en
+                    .title.txt_size--em3.txt_center.cl--gray.mg_bottom--x10
+                        h2 Seguridad Industrial
+                .list-services
+                    .box_icon.icon_size--x20.txt_center.mg_bottom--x10
+                        span.cl--blue.bdr_radius--full.bdr_blue--x5.icon.icon-refresh
+                    .subtitle.cl--blue.txt_center
+                        h2 Lo mejor en
+                    .title.txt_size--em3.txt_center.cl--gray.mg_bottom--x10
+                        h2 Consulta Empresarial
+    main.full
+        .bgi_inter.bgi_item(style="background-image: url(images/banner/01.jpg)")
+    main.full.bgc--silver
+        .container
+            .title.cl--gainsboro.txt_center.txt_upper.txt_size--em3.mg_top--x30
+                h3 Productos Destacados
+            .subtitle.subtitle_into.txt_upper.mg_bottom--x50.cl--silver
+                h4 Mobiliario.
+            .multi-item
+                .box_service.box_shadow.mg_box--x30.bgc--white
+                    .figure.mg_bottom--x20
+                        .bgi_item.mg_bottom--x10(style="background-image: url(images/banner/01.jpg)")
+                        .box_featured
+                            .info.bgc--blue
+                                span.cl--white.icon.icon-new.icon-refresh
+                                span.cl--white Nuevos
+                    .subtitle.subtitle_into.txt_upper.mg_left--x20.cl--silver
+                        h4 Mobiliario 1.
+                    .intro.pd_box--x20
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    button.btn.btn--full.btn_site Ver más.
+                    a.btn_gosth(href="/ps1.html")
+                .box_service.box_shadow.mg_box--x30.bgc--white
+                    .figure.mg_bottom--x20
+                        .bgi_item.mg_bottom--x10(style="background-image: url(images/banner/01.jpg)")
+                        .box_featured
+                            .info.bgc--blue
+                                span.cl--white.icon.icon-new.icon-refresh
+                                span.cl--white Nuevo
+                    .subtitle.subtitle_into.txt_upper.mg_left--x20.cl--silver
+                        h4 Mobiliario 1.
+                    .intro.pd_box--x20
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    button.btn.btn--full.btn_site Ver más.
+                    a.btn_gosth(href="/ps2.html")
+                .box_service.box_shadow.mg_box--x30.bgc--white
+                    .figure.mg_bottom--x20
+                        .bgi_item.mg_bottom--x10(style="background-image: url(images/banner/01.jpg)")
+                        .box_featured
+                            .info.bgc--blue
+                                span.cl--white.icon.icon-new.icon-refresh
+                                span.cl--white Nuevo
+                    .subtitle.subtitle_into.txt_upper.mg_left--x20.cl--silver
+                        h4 Mobiliario 1.
+                    .intro.pd_box--x20
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    button.btn.btn--full.btn_site Ver más.
+                    a.btn_gosth(href="/ps3.html")
+                .box_service.box_shadow.mg_box--x30.bgc--white
+                    .figure.mg_bottom--x20
+                        .bgi_item.mg_bottom--x10(style="background-image: url(images/banner/01.jpg)")
+                        .box_featured
+                            .info.bgc--blue
+                                span.cl--white.icon.icon-new.icon-refresh
+                                span.cl--white Nuevo
+                    .subtitle.subtitle_into.txt_upper.mg_left--x20.cl--silver
+                        h4 Mobiliario 1.
+                    .intro.pd_box--x20
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    button.btn.btn--full.btn_site Ver más.
+                    a.btn_gosth(href="/ps4.html")
+    main.full
+        .bgi_inter.bgi_inter--blue.bgi_item.pd_top--x100.pd_bottom--x10(style="background-image: url(images/banner/01.jpg)")
+            .container.zindx_1
+                .row
+                    .column.column-min
+                        .subtitle.subtitle_into.txt_upper.mg_bottom--x20.mg_left--x20.cl--white
+                            h4 Mobiliario 1.
+                        figure.figure_about.mg_bottom--x20
+                            .bgi.bgi_item.mg_bottom--x10(style="background-image: url(images/banner/01.jpg)")
+                    .column.column-min
+                        .title.title_icon.cl--white.mg_bottom--x20
+                            h2 Somos profesionales preparados para trabajar para que su negocio crezca.
+                        .paragraf.cl--white.mg_bottom--x50
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    .column.column-min
+                        .subtitle.subtitle_into.txt_upper.mg_bottom--x20.cl--white
+                            h4 Catalogos Para descargar.
+                        .box_download
+                            ul.list_download.list--inline
+                                li
+                                    span.cl--white.icon.mg_right--x10.icon-new.icon-refresh
+                                    .title.cl--white
+                                        h3 Catalogo de inmobiliario
+                                    hr.hr.hr_site.hr_site--full.hr_site--white.mg_bottom--x20.mg_top--x20
+                                    a.btn_gosth(href="/ps4.html")
+                                li
+                                    span.cl--white.icon.mg_right--x10.icon-new.icon-refresh
+                                    .title.cl--white
+                                        h3 Catalogo de inmobiliario
+                                    hr.hr.hr_site.hr_site--full.hr_site--white.mg_bottom--x20.mg_top--x20
+                                    a.btn_gosth(href="/ps4.html")
+                                li
+                                    span.cl--white.icon.mg_right--x10.icon-new.icon-refresh
+                                    .title.cl--white
+                                        h3 Catalogo de inmobiliario
+                                    hr.hr.hr_site.hr_site--full.hr_site--white.mg_bottom--x20.mg_top--x20
+                                    a.btn_gosth(href="/ps4.html")
+
+                        .paragraf.cl--white.mg_bottom--x50
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    main.middle.bgc--silver
+        .container
+            .row
+                .column.column-middle
+                    .title.txt_upper.txt_center.cl--blue
+                        h2 title
+                .column.column-middle
+                    .title.txt_upper.txt_center.cl--blue
+                        h2 title
