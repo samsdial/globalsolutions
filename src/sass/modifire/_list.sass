@@ -1,19 +1,27 @@
 // list.sass
 .list
     &--inline
-            padding-right: 0px
-            padding-left: 0px
-            margin: 0px
-            list-style: none
+        padding-right: 0px
+        padding-left: 0px
+        margin: 0px
+        list-style: none
+        vertical-align: middle
+        position: relative
+        &>li
+            display: inline-block
+            padding-left: 10px
+            padding-right: 10px
             vertical-align: middle
             position: relative
-            &>li
-                display: inline-block
-                padding-left: 10px
-                padding-right: 10px
-                vertical-align: middle
-                position: relative
-                z-index: 19
+            z-index: 19
+    &--line
+        padding: 0px
+        margin: 0px
+        list-style: none
+        vertical-align: middle
+        position: relative
+        &>li
+            display: block
     &_products
         width: 100%
         height: 20vh
@@ -29,6 +37,11 @@
             &:first-child
                 height: 500px
                 left: 0
+    &_inside
+        width: 100%
+        &>li
+            width: 278px
+            display: inline-block
     &_download
         &>li
             width: 100%
@@ -43,5 +56,40 @@
             border-radius: 25%
             text-align: center
             padding:  3px 0px
-
-
+    &_breadcrumbs
+        li
+            &:first-child
+                &:after
+                    content: "\e909"
+                    font-family: 'icomoon' !important
+                    speak: none
+                    font-style: normal
+                    font-weight: normal
+                    font-variant: normal
+                    text-transform: none
+                    line-height: 1
+                    -webkit-font-smoothing: antialiased
+                    -moz-osx-font-smoothing: grayscale
+                    color: $blue
+            a
+                margin-right: 12px
+    &_siderbar
+        li
+            position: relative
+            a
+                padding-left: 25px
+            &:after
+                content: "\e90a"
+                font-family: 'icomoon' !important
+                speak: none
+                font-style: normal
+                font-weight: normal
+                font-variant: normal
+                text-transform: none
+                line-height: 1
+                -webkit-font-smoothing: antialiased
+                -moz-osx-font-smoothing: grayscale
+                color: $blue
+                position: absolute
+                top: 35%
+                left: 0

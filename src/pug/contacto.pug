@@ -1,0 +1,53 @@
+extends ./base/layout.pug
+
+block content
+    main.full
+        .inside.office
+            .image
+    main.full.bgc--gainsboro
+        .container
+            .breadcrumbs.pd_breadcrumbs
+                ul.list_breadcrumbs.list--inline
+                    li
+                        a(href="/docs/")
+                            b Home
+                    li
+                        p contacto
+    main.full
+        .inside.maps
+    main.full
+        .container
+            .row
+                .column.column-full.row-center
+                        form#contact
+                            .affair.error
+                                label *Asunto
+                                input.contac_input(type="text", placeholder="Tipo de Contacto")
+                            .fullName.error
+                                label *Nombre y Apellidos
+                                input.contac_input(type="text", placeholder="Mi nombre completo")
+                            .email.error
+                                label *Correo Electronico
+                                input.contac_input(type="email", placeholder="micorreo@empresa.com")
+                            .reference.error
+                                label Referencia
+                                input.contac_input(type="text", placeholder="No. 12344")
+                            label *Mensaje
+                            textarea.contac_txtArea(type="text", rows="16", cols="60", placeholder="Cuentanos ahora")
+                            buttom.btn.btn_site Enviar
+    main.full.bgc--blue.pd_newslater
+        .container
+            .row
+                .column.column-min
+                    .title.cl--white
+                        h3 Carrera 123 #01 -02 Bogotá
+                .column.column-min
+                    .title.cl--white.txt_center
+                        h4 323 209 15 95
+                        br
+                        h4 320 341 25 66
+                .column.column-min
+                    .title.cl--white
+                        h4 lflechas@lysglobalsolutions.com
+                        br
+                        h4 srubiano@lysglobalsolutions.com
