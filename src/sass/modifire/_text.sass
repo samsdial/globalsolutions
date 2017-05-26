@@ -31,10 +31,17 @@
         text-transform: capitalize
     &_right
         text-align: right
+    &_shadow
+        +heading
+            text-shadow: 0px 2px 2px $black
+        span
+            text-shadow: 0px 2px 2px $black
     &_size
         &--em
             &3
                 font-size: 3rem
+            &4
+                font-size: 4rem
             &8
                 font-size: 8rem
             // number
