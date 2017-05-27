@@ -93,3 +93,29 @@
                 position: absolute
                 top: 35%
                 left: 0
+    &_contact
+        width: 100%
+        margin: 0 auto
+        +MQ(S)
+            width: 80%
+        li
+            width: 100%
+            +MQ(S)
+                width: 45%
+            div
+                margin-bottom: 12px
+            label
+                text-align: left
+                margin-bottom: 5px
+                color: $blue
+            label,
+            input
+                display: block
+            // &:first-child,
+            // &:nth-last-child(1)
+            //     width: 50%
+            // &:nth-last-child(2),
+            &:last-child
+                width:  100%
+                +MQ(S)
+                    width: 91%
