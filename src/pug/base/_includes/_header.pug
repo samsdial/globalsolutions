@@ -1,8 +1,15 @@
 include _mixing.pug
 include _mixgit.pug
 .header_wrapper
-    header.box_shadow
-        .container.bgc--white.bdr_radius--box3.box_shadow--header
+    header.bgc--blue
+        .container
+            .column_tel.cl--white
+                small Tel: 321 267 9283
+            .column_info.cl--white
+                small Bogotá, Colombia  |
+                    a.mg_left--x10.cl--white(href="/globalsolutions/contacto.html") Contactenos.
+    header.box_shadow.bgc--blue
+        .container.bdr_radius--box3
             .column_brand
                 .box-logo
                     span.logo.logo_lys--min

@@ -17,7 +17,7 @@ block content
         .container
             .row
                 .column.inside-min.bgc--silver.mg_top--x30
-                    .title.cl--gainsboro.mg_bottom--x20
+                    .title.cl--gray.mg_bottom--x20
                         h3 Office Solutions.
                     .sidebar
                         ul.list_siderbar.list--line
@@ -30,137 +30,29 @@ block content
                             li
                                 a.btn(href="#tables") Mesas.
                             li
-                                a.btn(href="archiving") Almacenamiento y Archivo.
+                                a.btn(href="#archiving") Almacenamiento y Archivo.
                             li
-                                a.btn(href="offices") Escritorios.
+                                a.btn(href="#offices") Escritorios.
                             li
-                                a.btn(href="divisions") Divisiones oficina abierta.
+                                a.btn(href="#divisions") Divisiones oficina abierta.
                             li
-                                a.btn(href="panel") Tableros.
+                                a.btn(href="#panel") Tableros.
                 .column.inside-middle
                     #receptions
-                        .title.cl--gainsboro.txt_upper.txt_size--em3.mg_top--x30
-                            h3 Recepción.
-                        .subtitle.subtitle_into.txt_upper.mg_bottom--x50.cl--gainsboro
-                            h5 Office Solutions.
-                        ul.list_inside.list--inline
-                            li
-                                .box_service.box_shadow.mg_box--x10.bgc--white
-                                    .figure.mg_bottom--x20
-                                        .bgi_item.mg_bottom--x10(style="background-image: url(images/banner/01.jpg)")
-                                        .box_featured
-                                            .info.bgc--blue
-                                                span.cl--white.icon.icon-new.icon-refresh
-                                                span.cl--white Nuevo
-                                    .subtitle.subtitle_into.txt_upper.mg_left--x20.cl--silver
-                                        h4 Mobiliario 1.
-                                    .intro.pd_box--x20.hidden
-                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    button.btn.btn--full.btn_site Ver más.
-                                    a.btn_gosth(href="/ps1.html")
-                            li
-                                .box_service.box_shadow.mg_box--x10.bgc--white
-                                    .figure.mg_bottom--x20
-                                        .bgi_item.mg_bottom--x10(style="background-image: url(images/banner/01.jpg)")
-                                        .box_featured
-                                            .info.bgc--blue
-                                                span.cl--white.icon.icon-new.icon-refresh
-                                                span.cl--white Nuevos
-                                    .subtitle.subtitle_into.txt_upper.mg_left--x20.cl--silver
-                                        h4 Mobiliario 1.
-                                    .intro.pd_box--x20.hidden
-                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    button.btn.btn--full.btn_site Ver más.
-                                    a.btn_gosth(href="/ps1.html")
-                            li
-                                .box_service.box_shadow.mg_box--x10.bgc--white
-                                    .figure.mg_bottom--x20
-                                        .bgi_item.mg_bottom--x10(style="background-image: url(images/banner/01.jpg)")
-                                        .box_featured
-                                            .info.bgc--blue
-                                                span.cl--white.icon.icon-new.icon-refresh
-                                                span.cl--white Nuevos
-                                    .subtitle.subtitle_into.txt_upper.mg_left--x20.cl--silver
-                                        h4 Mobiliario 2.
-                                    .intro.pd_box--x20.hidden
-                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    button.btn.btn--full.btn_site Ver más.
-                                    a.btn_gosth(href="/ps1.html")
-                            li
-                                .box_service.box_shadow.mg_box--x10.bgc--white
-                                    .figure.mg_bottom--x20
-                                        .bgi_item.mg_bottom--x10(style="background-image: url(images/banner/01.jpg)")
-                                        .box_featured
-                                            .info.bgc--blue
-                                                span.cl--white.icon.icon-new.icon-refresh
-                                                span.cl--white Nuevos
-                                    .subtitle.subtitle_into.txt_upper.mg_left--x20.cl--silver
-                                        h4 Mobiliario 2.
-                                    .intro.pd_box--x20.hidden
-                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    button.btn.btn--full.btn_site Ver más.
-                                    a.btn_gosth(href="/ps1.html")
+                        include ./office/receptions.pug
                     #waiting_room
-                        .title.cl--gainsboro.txt_upper.txt_size--em3.mg_top--x30
-                            h3 Salas de espera.
-                        .subtitle.subtitle_into.txt_upper.mg_bottom--x50.cl--gainsboro
-                            h5 Office Solutions.
-                        ul.list_inside.list--inline
-                            li
-                                .box_service.box_shadow.mg_box--x10.bgc--white
-                                    .figure.mg_bottom--x20
-                                        .bgi_item.mg_bottom--x10(style="background-image: url(images/banner/01.jpg)")
-                                        .box_featured
-                                            .info.bgc--blue
-                                                span.cl--white.icon.icon-new.icon-refresh
-                                                span.cl--white Nuevo
-                                    .subtitle.subtitle_into.txt_upper.mg_left--x20.cl--silver
-                                        h4 Mobiliario 1.
-                                    .intro.pd_box--x20
-                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    button.btn.btn--full.btn_site Ver más.
-                                    a.btn_gosth(href="/ps1.html")
-                            li
-                                .box_service.box_shadow.mg_box--x10.bgc--white
-                                    .figure.mg_bottom--x20
-                                        .bgi_item.mg_bottom--x10(style="background-image: url(images/banner/01.jpg)")
-                                        .box_featured
-                                            .info.bgc--blue
-                                                span.cl--white.icon.icon-new.icon-refresh
-                                                span.cl--white Nuevos
-                                    .subtitle.subtitle_into.txt_upper.mg_left--x20.cl--silver
-                                        h4 Mobiliario 1.
-                                    .intro.pd_box--x20
-                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    button.btn.btn--full.btn_site Ver más.
-                                    a.btn_gosth(href="/ps1.html")
-                            li
-                                .box_service.box_shadow.mg_box--x10.bgc--white
-                                    .figure.mg_bottom--x20
-                                        .bgi_item.mg_bottom--x10(style="background-image: url(images/banner/01.jpg)")
-                                        .box_featured
-                                            .info.bgc--blue
-                                                span.cl--white.icon.icon-new.icon-refresh
-                                                span.cl--white Nuevos
-                                    .subtitle.subtitle_into.txt_upper.mg_left--x20.cl--silver
-                                        h4 Mobiliario 2.
-                                    .intro.pd_box--x20
-                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    button.btn.btn--full.btn_site Ver más.
-                                    a.btn_gosth(href="/ps1.html")
-                            li
-                                .box_service.box_shadow.mg_box--x10.bgc--white
-                                    .figure.mg_bottom--x20
-                                        .bgi_item.mg_bottom--x10(style="background-image: url(images/banner/01.jpg)")
-                                        .box_featured
-                                            .info.bgc--blue
-                                                span.cl--white.icon.icon-new.icon-refresh
-                                                span.cl--white Nuevos
-                                    .subtitle.subtitle_into.txt_upper.mg_left--x20.cl--silver
-                                        h4 Mobiliario 2.
-                                    .intro.pd_box--x20
-                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    button.btn.btn--full.btn_site Ver más.
-                                    a.btn_gosth(href="/ps1.html")
+                        include ./office/waiting_room.pug
+                    #chairs
+                        include ./office/chairs.pug
+                    #tables
+                        include ./office/tables.pug
+                    #archiving
+                        include ./office/archiving.pug
+                    #offices
+                        include ./office/offices.pug
+                    #divisions
+                        include ./office/divisions.pug
+                    #panel
+                        include ./office/panel.pug
 
 

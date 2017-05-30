@@ -4,15 +4,35 @@
         width: 100%
         z-index: 1000
         header
-            position: absolute
-            margin-top: 35px
-            top: 0
-            left: 0
+            position: relative
+            padding: 0
+            // position: absolute
+            // padding: 0px
+            // top: 0
+            // left: 0
             z-index: 1
             width: 100%
             .container
                 padding: 12px 12px 0px 12px
 
+.column
+    &_tel,
+    &_info
+        display: inline-block
+        vertical-align: top
+        padding-bottom: 12px
+    &_tel
+        width: 100%
+        text-align: center
+        +MQ(S)
+            width: 20%
+            text-align: center
+    &_info
+        width: 100%
+        text-align: center
+        +MQ(S)
+            width: 75%
+            text-align: right
 .column
     &_brand,
     &_nav
@@ -38,8 +58,8 @@ nav
             padding-right: 0px
             padding-bottom: 50px
             text-align: center
-            z-index: 100
-            background-color: $white
+            z-index: 9999
+            background-color: transparent
             +transform(translateX(-100%))
             +transition(all 0.3s ease-in-out)
             +MQ(M)
@@ -66,7 +86,7 @@ nav
                     width: auto
                 a
                     margin: 0px
-                    color: $black
+                    color: $white
                     text-transform: uppercase
                     display: block
                     cursor: pointer
@@ -75,9 +95,9 @@ nav
                     font-weight: 500
                     position: relative
                     +press
-                        color: $blue
+                        color: $darkBlue
                         &:after
-                            background-color: $blue
+                            background-color: $white
                             width: 100%
                     &:after
                         content: ""
@@ -108,7 +128,7 @@ nav
         top: 10px
         left: 0
         margin-left: 0
-        background-color: $blue
+        background-color: $white
         +transition(all 0.3s ease-in-out)
         &:before,
         &:after
@@ -118,7 +138,7 @@ nav
             height: 100%
             backface-visibility: hidden
             will-change: transform
-            background-color: $blue
+            background-color: $white
             +transform(translateZ(0))
             +transition(transform 0.3s 0.3s)
         &:before
@@ -127,6 +147,7 @@ nav
             +transform(translateY(6px))
 .nav-is-visible
     .nav--site
+        background-color: $blue
         +transform(translateX(0))
     .nav_trigger
         span

@@ -1,0 +1,42 @@
+extends ./base/layout.pug
+
+block content
+    main.full
+        .inside.office
+            .image
+    main.full.bgc--gainsboro
+        .container
+            .breadcrumbs.pd_breadcrumbs
+                ul.list_breadcrumbs.list--inline
+                    li
+                        a(href="/docs/")
+                            b Home
+                    li
+                        p Commercial Solutions.
+    main.full.pd_bottom--x50
+        .container
+            .row
+                .column.inside-min.bgc--silver.mg_top--x30
+                    .title.cl--gray.mg_bottom--x20
+                        h3 Commercial Solutions.
+                    .sidebar
+                        ul.list_siderbar.list--line
+                            li
+                                a.btn(href="#chairs") Sillas.
+                            li
+                                a.btn(href="#seats") Butacos.
+                            li
+                                a.btn(href="#tables") Mesas.
+                            li
+                                a.btn(href="#tandem") Tándem.
+                .column.inside-middle
+                    #chairs
+                        include ./commercial/chairs.pug
+                    #seats
+                        include ./commercial/seats.pug
+                    #tables
+                        include ./commercial/tables.pug
+                    #tandem
+                        include ./commercial/tandem.pug
+
+

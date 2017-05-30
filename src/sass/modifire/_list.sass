@@ -40,8 +40,12 @@
     &_inside
         width: 100%
         &>li
-            width: 278px
+            width: 100%
             display: inline-block
+            +MQ(S)
+                width: 230px
+            +MQ(M)
+                width: 260px
     &_download
         &>li
             width: 100%

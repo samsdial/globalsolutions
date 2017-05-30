@@ -1,0 +1,38 @@
+extends ./base/layout.pug
+
+block content
+    main.full
+        .inside.office
+            .image
+    main.full.bgc--gainsboro
+        .container
+            .breadcrumbs.pd_breadcrumbs
+                ul.list_breadcrumbs.list--inline
+                    li
+                        a(href="/docs/")
+                            b Home
+                    li
+                        p School Solutions.
+    main.full.pd_bottom--x50
+        .container
+            .row
+                .column.inside-min.bgc--silver.mg_top--x30
+                    .title.cl--gray.mg_bottom--x20
+                        h3 School Solutions.
+                    .sidebar
+                        ul.list_siderbar.list--line
+                            li
+                                a.btn(href="#chairs") Sillas.
+                            li
+                                a.btn(href="#desks") Escritorios y pupitres
+                            li
+                                a.btn(href="#libraries") Bibliotecas.
+                .column.inside-middle
+                    #chairs
+                        include ./school/chairs.pug
+                    #desks
+                        include ./school/desks.pug
+                    #libraries
+                        include ./school/libraries.pug
+
+
