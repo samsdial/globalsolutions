@@ -22,6 +22,8 @@ block content
                     .sidebar
                         ul.list_siderbar.list--line
                             li
+                                a.btn(href="#tables_games") Juegos de Mesa.
+                            li
                                 a.btn(href="#chairs") Sillas.
                             li
                                 a.btn(href="#seats") Butacos.
@@ -30,6 +32,8 @@ block content
                             li
                                 a.btn(href="#tandem") Tándem.
                 .column.inside-middle
+                    #tables_games
+                        include ./commercial/tables_games.pug
                     #chairs
                         include ./commercial/chairs.pug
                     #seats
