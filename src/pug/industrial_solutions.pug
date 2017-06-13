@@ -1,0 +1,28 @@
+extends ./base/layout.pug
+
+block content
+    main.full
+        .inside.industrial
+            .image
+    main.full.bgc--gainsboro
+        .container
+            .breadcrumbs.pd_breadcrumbs
+                ul.list_breadcrumbs.list--inline
+                    li
+                        a(href="/docs/")
+                            b Home
+                    li
+                        p Industrial Solutions.
+    main.full.pd_bottom--x50
+        .container
+            .row
+                .column.inside-min.bgc--silver.mg_top--x30
+                    .title.cl--gray.mg_bottom--x20
+                        h3 Industrial Solutions.
+                    .sidebar
+                        ul.list_siderbar.list--line
+                            li
+                                a.btn(href="#industrial") Industrial.
+                .column.inside-middle
+                    #industrial
+                        include ./industrial/industrial.pug
